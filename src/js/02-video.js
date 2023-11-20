@@ -17,6 +17,6 @@ const saveTime = function (data) {
 };
 const throttledSaveTime = throttle(saveTime, 1000);
 
-player.on("timeupdate", throttledSaveTime);
+player.on("timeupdate", throttledSaveTime,);
 
 
