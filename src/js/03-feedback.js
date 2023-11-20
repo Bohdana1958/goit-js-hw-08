@@ -34,5 +34,5 @@ const savedFormData = () => {
     localStorage.setItem('feedback-form-state', jsonStringThrottle);
 };
 
-const throttledSaveFormData = throttle(savedFormData, 50000);
+const throttledSaveFormData = throttle(savedFormData, 500);
 form.addEventListener('input', throttledSaveFormData);
